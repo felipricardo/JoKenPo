@@ -1,6 +1,6 @@
 # JoKenPo - Jogo Pedra, Papel e Tesoura
 
-![Screenshot](https://skdesu.com/wp-content/uploads/2018/10/jokenpo-pedra-papel-e-tesoura.png)
+![Screenshot](https://i.pinimg.com/originals/a6/12/64/a61264c0419f3aaace0eb24e9cbfda99.png)
 
 ## Descrição
 
