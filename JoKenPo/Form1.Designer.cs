@@ -38,9 +38,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnPedra = new System.Windows.Forms.Button();
+            this.btnPapel = new System.Windows.Forms.Button();
+            this.btnTesoura = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picResultado)).BeginInit();
@@ -143,38 +143,44 @@
             this.label5.TabIndex = 9;
             this.label5.Text = "=";
             // 
-            // button1
+            // btnPedra
             // 
-            this.button1.Location = new System.Drawing.Point(72, 337);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(200, 200);
-            this.button1.TabIndex = 10;
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnPedra.BackgroundImage = global::JoKenPo.Properties.Resources.Pedra;
+            this.btnPedra.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnPedra.Location = new System.Drawing.Point(72, 337);
+            this.btnPedra.Name = "btnPedra";
+            this.btnPedra.Size = new System.Drawing.Size(200, 200);
+            this.btnPedra.TabIndex = 10;
+            this.btnPedra.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnPapel
             // 
-            this.button2.Location = new System.Drawing.Point(440, 337);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(200, 200);
-            this.button2.TabIndex = 11;
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnPapel.BackgroundImage = global::JoKenPo.Properties.Resources.Papel;
+            this.btnPapel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnPapel.Location = new System.Drawing.Point(440, 337);
+            this.btnPapel.Name = "btnPapel";
+            this.btnPapel.Size = new System.Drawing.Size(200, 200);
+            this.btnPapel.TabIndex = 11;
+            this.btnPapel.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnTesoura
             // 
-            this.button3.Location = new System.Drawing.Point(806, 337);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(200, 200);
-            this.button3.TabIndex = 12;
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnTesoura.BackgroundImage = global::JoKenPo.Properties.Resources.Tesoura;
+            this.btnTesoura.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnTesoura.Location = new System.Drawing.Point(806, 337);
+            this.btnTesoura.Name = "btnTesoura";
+            this.btnTesoura.Size = new System.Drawing.Size(200, 200);
+            this.btnTesoura.TabIndex = 12;
+            this.btnTesoura.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1118, 712);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnTesoura);
+            this.Controls.Add(this.btnPapel);
+            this.Controls.Add(this.btnPedra);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -209,9 +215,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnPedra;
+        private System.Windows.Forms.Button btnPapel;
+        private System.Windows.Forms.Button btnTesoura;
     }
 }
 
