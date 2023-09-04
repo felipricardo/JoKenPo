@@ -20,5 +20,23 @@ namespace JoKenPo
             Image.FromFile("imagens/Tesoura.png"),
             Image.FromFile("imagens/Papel.png")
         };
+
+        public Image ImgPC { get; private set; }
+        public Image ImgJogador { get; private set; }
+
+        public Resultado Jogar(int jogador)
+        {
+            return Resultado.Empatar;
+        }
+
+        private int JogadaPC()
+        {
+            int mil = DateTime.Now.Millisecond;
+
+            if (mil < 333)
+            {
+
+            }
+        }
     }
 }
