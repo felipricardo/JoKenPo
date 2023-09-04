@@ -37,7 +37,11 @@ namespace JoKenPo
             }
             else if ((jogador == 0 && pc == 1) || (jogador == 1 && pc == 2) || (jogador == 2 && pc == 0))
             {
-
+                return Resultado.Ganhar;
+            }
+            else
+            {
+                return Resultado.Perder;
             }
 
         }
