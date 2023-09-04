@@ -26,7 +26,20 @@ namespace JoKenPo
 
         public Resultado Jogar(int jogador)
         {
-            return Resultado.Empatar;
+            int pc = JogadaPC();
+
+            ImgJogador = images[jogador];
+            ImgPC = images[pc];
+
+            if (jogador == pc)
+            {
+                return Resultado.Empatar;
+            }
+            else if ((jogador == 0 && pc == 1) || (jogador == 1 && pc == 2) || (jogador == 2 && pc == 0))
+            {
+
+            }
+
         }
 
         private int JogadaPC()
