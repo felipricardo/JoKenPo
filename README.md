@@ -1,6 +1,6 @@
 # JoKenPo - Jogo Pedra, Papel e Tesoura
 
-![Screenshot]([https://i.pinimg.com/originals/a6/12/64/a61264c0419f3aaace0eb24e9cbfda99.png](https://media.istockphoto.com/id/824700804/pt/vetorial/rock-paper-scissors-vector-icons.jpg?s=170667a&w=0&k=20&c=eAAZ8OeLQikUu_gOLSjr_xopa1m6O5SUaRrgIrxmkRg=))
+![Screenshot](https://www.fschuch.com/blog/2019/07/23/desafio-de-programacao-o-jogo-pedra-papel-e-tesoura/featured.png)
 
 ## Descrição
 
