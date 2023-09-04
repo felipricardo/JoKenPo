@@ -28,7 +28,7 @@ Este é um jogo simples de "Pedra, Papel e Tesoura" (JoKenPo) implementado em C#
 
 ## Captura de Tela
 
-![Screenshot](screenshot.png)
+![Screenshot](https://i.ibb.co/8zts2x7/Captura-de-tela-2023-09-04-144026.png)
 
 ## Autor
 
