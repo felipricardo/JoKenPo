@@ -19,20 +19,20 @@ namespace JoKenPo
 
         private void btnPedra_Click(object sender, EventArgs e)
         {
-
+            StartGame(0);
         }
 
         private void btnPapel_Click(object sender, EventArgs e)
         {
-
+            StartGame(1);
         }
 
         private void btnTesoura_Click(object sender, EventArgs e)
         {
-
+            StartGame(2);
         }
 
-        private void StarGame(int opcao)
+        private void StartGame(int opcao)
         {
             labelResultado.Visible = false;
             Game jogo = new Game();
