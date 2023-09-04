@@ -40,15 +40,17 @@ namespace JoKenPo
             switch (jogo.Jogar(opcao))
             {
                 case Game.Resultado.Ganhar:
-                    picResultado.BackgroundImage = Image.FromFile("images/Ganhar.png");
-                    break;
+                    picResultado.BackgroundImage = Image.FromFile("imagens/Ganhar.png");
+                    goto default;
                 case Game.Resultado.Perder:
-                    picResultado.BackgroundImage = Image.FromFile("images/Perder.png");
-                    break;
+                    picResultado.BackgroundImage = Image.FromFile("imagens/Perder.png");
+                    goto default;
                 case Game.Resultado.Empatar:
-                    picResultado.BackgroundImage = Image.FromFile("images/Empatar.png");
-                    break;
+                    picResultado.BackgroundImage = Image.FromFile("imagens/Empatar.png");
+                    goto default;
                 default:
+                    pictureBox1.Image = jogo.ImgJogador;
+                    pictureBox2.Image = jogo.ImgPC;
                     break;
             }
         }
