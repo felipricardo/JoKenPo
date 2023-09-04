@@ -24,12 +24,12 @@ namespace JoKenPo
 
         private void btnPapel_Click(object sender, EventArgs e)
         {
-            StartGame(1);
+            StartGame(2);
         }
 
         private void btnTesoura_Click(object sender, EventArgs e)
         {
-            StartGame(2);
+            StartGame(1);
         }
 
         private void StartGame(int opcao)
