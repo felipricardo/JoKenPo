@@ -31,5 +31,23 @@ namespace JoKenPo
         {
 
         }
+
+        private void StarGame(int opcao)
+        {
+            labelResultado.Visible = false;
+            Game jogo = new Game();
+
+            switch (jogo.Jogar(opcao))
+            {
+                case Game.Resultado.Ganhar:
+                    break;
+                case Game.Resultado.Perder:
+                    break;
+                case Game.Resultado.Empatar:
+                    break;
+                default:
+                    break;
+            }
+        }
     }
 }

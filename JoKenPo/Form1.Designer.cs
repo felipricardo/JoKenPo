@@ -35,7 +35,7 @@
             this.picResultado = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.labelResultado = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.btnPedra = new System.Windows.Forms.Button();
@@ -110,16 +110,16 @@
             this.label2.TabIndex = 6;
             this.label2.Text = "PC";
             // 
-            // label3
+            // labelResultado
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label3.Location = new System.Drawing.Point(893, 191);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(31, 32);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "?";
+            this.labelResultado.AutoSize = true;
+            this.labelResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelResultado.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.labelResultado.Location = new System.Drawing.Point(893, 191);
+            this.labelResultado.Name = "labelResultado";
+            this.labelResultado.Size = new System.Drawing.Size(31, 32);
+            this.labelResultado.TabIndex = 7;
+            this.labelResultado.Text = "?";
             // 
             // label4
             // 
@@ -186,7 +186,7 @@
             this.Controls.Add(this.btnPedra);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.labelResultado);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.picResultado);
@@ -215,7 +215,7 @@
         private System.Windows.Forms.PictureBox picResultado;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label labelResultado;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnPedra;
