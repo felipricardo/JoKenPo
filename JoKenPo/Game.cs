@@ -4,6 +4,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static JoKenPo.Game;
 
 namespace JoKenPo
 {
@@ -15,12 +16,17 @@ namespace JoKenPo
             Ganhar, Perder, Empatar
         }
 
+        public enum Jogada
+        {
+            Pedra, Papel, Tesoura
+        }
+
         // Array de imagens para representar as escolhas possíveis
         public static Image[] images =
         {
             Image.FromFile("imagens/Pedra.png"),
+            Image.FromFile("imagens/Papel.png"),
             Image.FromFile("imagens/Tesoura.png"),
-            Image.FromFile("imagens/Papel.png")
         };
 
         // Propriedades para armazenar as imagens escolhidas pelo jogador e pelo computador
@@ -28,18 +34,20 @@ namespace JoKenPo
         public Image ImgJogador { get; private set; }
 
         // Método para realizar uma jogada e determinar o resultado
-        public Resultado Jogar(int jogador)
+        public Resultado Jogar(Jogada jogador)
         {
-            int pc = JogadaPC(); // Chama o método para a jogada do computador
+            Jogada pc = JogadaPC(); // Chama o método para a jogada do computador
 
-            ImgJogador = images[jogador]; // Define a imagem escolhida pelo jogador
-            ImgPC = images[pc]; // Define a imagem escolhida pelo computador
+            ImgJogador = images[(int)jogador]; // Define a imagem escolhida pelo jogador
+            ImgPC = images[(int)pc]; // Define a imagem escolhida pelo computador
 
             if (jogador == pc)
             {
                 return Resultado.Empatar; // Retorna empate se as escolhas forem iguais
             }
-            else if ((jogador == 0 && pc == 1) || (jogador == 1 && pc == 2) || (jogador == 2 && pc == 0))
+            else if ((jogador == Jogada.Pedra && pc == Jogada.Tesoura) 
+                    || (jogador == Jogada.Papel && pc == Jogada.Pedra) 
+                    || (jogador == Jogada.Tesoura && pc == Jogada.Papel))
             {
                 return Resultado.Ganhar; // Retorna ganhar se o jogador vencer
             }
@@ -50,21 +58,21 @@ namespace JoKenPo
         }
 
         // Método para gerar uma jogada aleatória para o computador
-        private int JogadaPC()
+        private Jogada JogadaPC()
         {
             int mil = DateTime.Now.Millisecond;
 
             if (mil < 333)
             {
-                return 0; // Escolhe Pedra
+                return Jogada.Pedra; // Escolhe Pedra
             }
             else if (mil >= 333 && mil < 667)
             {
-                return 1; // Escolhe Tesoura
+                return Jogada.Tesoura; // Escolhe Tesoura
             }
             else
             {
-                return 2; // Escolhe Papel
+                return Jogada.Papel; // Escolhe Papel
             }
         }
     }

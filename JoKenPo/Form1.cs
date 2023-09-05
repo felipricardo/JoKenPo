@@ -20,23 +20,23 @@ namespace JoKenPo
         // Manipulador de evento para o botão "Pedra"
         private void btnPedra_Click(object sender, EventArgs e)
         {
-            StartGame(0); // Inicia o jogo com a escolha de Pedra (0)
+            StartGame(Game.Jogada.Pedra); // Inicia o jogo com a escolha de Pedra (0)
         }
 
         // Manipulador de evento para o botão "Papel"
         private void btnPapel_Click(object sender, EventArgs e)
         {
-            StartGame(2); // Inicia o jogo com a escolha de Papel (2)
+            StartGame(Game.Jogada.Papel); // Inicia o jogo com a escolha de Papel (2)
         }
 
         // Manipulador de evento para o botão "Tesoura"
         private void btnTesoura_Click(object sender, EventArgs e)
         {
-            StartGame(1); // Inicia o jogo com a escolha de Tesoura (1)
+            StartGame(Game.Jogada.Tesoura); // Inicia o jogo com a escolha de Tesoura (1)
         }
 
         // Método para iniciar o jogo com a escolha do jogador
-        private void StartGame(int opcao)
+        private void StartGame(Game.Jogada opcao)
         {
             labelResultado.Visible = false; // Oculta o rótulo de resultado
             Game jogo = new Game(); // Cria uma instância do jogo
