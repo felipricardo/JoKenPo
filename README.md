@@ -43,3 +43,31 @@ Contribuições são bem-vindas! Sinta-se à vontade para criar um fork deste pr
 Este projeto está licenciado sob a Licença [MIT](LICENSE).
 
 ---
+# pseudocodigo de Game.cs:
+
+```
+INÍCIO DO PROGRAMA
+    Crie uma classe chamada "Game"
+
+    Dentro da classe "Game":
+        Crie uma enumeração chamada "Resultado" com os valores: Ganhar, Perder, Empatar
+        Crie uma enumeração chamada "Jogada" com os valores: Pedra, Papel, Tesoura
+        Crie um array de imagens chamado "images" para representar escolhas possíveis
+        Crie propriedades "ImgPC" e "ImgJogador" para armazenar imagens escolhidas
+        Crie um método chamado "Jogar" que aceita a escolha do jogador e retorna o resultado do jogo
+        Crie um método privado chamado "JogadaPC" para gerar uma jogada aleatória para o computador
+
+    Dentro do método "Jogar":
+        Determine a jogada do computador chamando o método "JogadaPC"
+        Defina as imagens escolhidas pelo jogador e pelo computador
+        Se a escolha do jogador for igual à escolha do computador, retorne "Empatar"
+        Senão, se o jogador ganhar, retorne "Ganhar"
+        Senão, retorne "Perder"
+
+    Dentro do método privado "JogadaPC":
+        Gere um número aleatório usando o milissegundo atual
+        Se o número for menor que 333, escolha "Pedra" para o computador
+        Senão, se o número estiver entre 333 e 667, escolha "Tesoura" para o computador
+        Senão, escolha "Papel" para o computador
+
+FIM DO PROGRAMA
